@@ -18,6 +18,7 @@ export const App = () => {
   const [page, setPage] = useState(1);
 
   const onSubmit = query => {
+    if (!query) return;
     setHits([]);
     setPage(1);
     setQuery(query);
